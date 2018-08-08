@@ -1,0 +1,10 @@
+<h1>Les avis</h1>
+<% @reviews.each do |review| %>
+  <%= review.content %>
+  <p>Avis: <%= review.rating %>/5</p>
+  <% end %>
+<br>
+<br>
+<button type="button" class="btn btn-light"><%= link_to 'Ajouter un avis', new_restaurant_review_path %></button>
+<br>
+<br>
